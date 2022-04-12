@@ -26,7 +26,7 @@
 
 p {
     font-size: 18px;
-    max-width: 80%;
+    /* max-width: 80%; */
 }
 
 .format {
@@ -96,6 +96,7 @@ button {
 .mobile-mod {
     /* height: 100%; */
     width: 155px;
+    min-width: 155px;
     overflow: hidden;
     /* float: left; */
     /* object-fit: cover; */
@@ -115,10 +116,131 @@ button {
     margin-top: 50px;
 }
 
-.auction p {
+/* .auction p {
     margin: 20px 0;
+} */
+
+
+.block-system {
+    margin-left: 20px;
+    /* padding-left: 20px; */
+    margin-bottom: 50px;
+    display: flex;
 }
+
+.block {
+    padding-right: 30px;
+}
+
+.block-upper img {
+    display: block;
+}
+
+.block-lower {
+    background-color: rgb(233, 229, 229);
+    max-width: 290px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.upper {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px 10px 20px;
+}
+
+.upper p {
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.gloop {
+    color: orange;
+    
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.price-tag {
+    display: flex;
+}
+
+.price-tag img {
+    padding-right: 10px;
+}
+
+.no-left {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    color: lightslategray;
+}
+
+.background-sale {
+    background-image: url(./assets/upsell-footer-image.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+}
+
+footer .logo {
+    padding-bottom: 20px;
+}
+
+.icons {
+    padding-top: 20px;
+}
+
+.icon {
+    height: 30px;
+    padding-right: 20px;
+}
+
+h4 {
+    color: grey;
+    padding-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 20px;
+}
+
+.list {
+    margin-right: 50px;
+    margin-bottom: 30px;
+    width: 80px;
+}
+
+footer a {
+    text-decoration: none;
+    display: block;
+    color: rgb(155, 150, 150);
+    margin-bottom: 5px;
+}
+
+footer p {
+    color: lightgray;
+}
+
 
 .desktop {
     display: none;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .desktop {
+        display: inherit;
+    }
+
+    .mobile {
+        display: none;
+    }
 }
