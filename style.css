@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
@@ -14,6 +17,25 @@
     
 }
 
+.nftlogo {
+    max-height: 30px;
+}
+
+
+.links a {
+    padding-left: 20px;
+    text-decoration: none;
+    /* color: black; */
+}
+
+.links a:not(:last-child) {
+    color: black;
+}
+
+.sign {
+    color: deeppink;
+}
+
 .menu {
     max-height: 36px;
     max-width: 50px;
@@ -21,13 +43,11 @@
 
 .launching {
     text-transform: uppercase;
-    color: rgb(230, 60, 116);
+    color: rgb(230, 60, 116); 
+    font-weight: 600;
 }
 
-p {
-    font-size: 18px;
-    /* max-width: 80%; */
-}
+
 
 .format {
     padding-top: 20px;
@@ -42,7 +62,10 @@ p {
     padding-top: 30px;
 }
 
-
+.signup h1 {
+    font-size: 64px;
+    font-weight: 900;
+}
 /* button {
     border-radius: 100rem;
     padding: 1rem;
@@ -73,30 +96,44 @@ button {
     font-weight: bold;
 }
 
+.half-text {
+    max-width: 70%;
+    padding-bottom: 50px;
+}
+
 .free {
     background-image: url(./assets/background.svg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     /* background-clip: content-box; */
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 100px;
+    /* padding-bottom: 0px; */
 }
 
 
 
 .free h1 {
- padding-bottom: 30px;
-}
+    padding-bottom: 20px;
+    font-weight: 600;
+   }
 
 .logo {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    /* border: 2px solid black; */
+
+}
+
+.logo img {
+    max-height: 30px;
 }
 
 .mobile-mod {
     /* height: 100%; */
-    width: 155px;
-    min-width: 155px;
+    width: 98px;
+    min-width: 98px;
     overflow: hidden;
     /* float: left; */
     /* object-fit: cover; */
@@ -114,6 +151,7 @@ button {
 
 .auction h1 {
     margin-top: 50px;
+    font-weight: 600;
 }
 
 /* .auction p {
@@ -181,6 +219,11 @@ button {
     color: lightslategray;
 }
 
+.line {
+    background-color: rgb(233, 229, 229);
+    height: 2px;
+}
+
 .background-sale {
     background-image: url(./assets/upsell-footer-image.svg);
     background-repeat: no-repeat;
@@ -188,17 +231,27 @@ button {
     background-size: contain;
 }
 
-footer .logo {
-    padding-bottom: 20px;
+.upsale h1 {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+.upsale .wrapper {
+    margin-bottom: 0;
+}
+
+footer .nftlogo {
+    margin-bottom: 15px;
 }
 
 .icons {
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 30px;
 }
 
 .icon {
-    height: 30px;
-    padding-right: 20px;
+    height: 20px;
+    padding-right: 10px;
 }
 
 h4 {
@@ -209,7 +262,7 @@ h4 {
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 20px;
+    /* margin: 0 20px; */
 }
 
 .list {
@@ -226,7 +279,7 @@ footer a {
 }
 
 footer p {
-    color: lightgray;
+    color: rgb(175, 171, 171);
 }
 
 
@@ -239,6 +292,85 @@ footer p {
     .desktop {
         display: inherit;
     }
+
+    .wrapper {
+        margin: 30px 50px;
+    }
+
+    header {
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+
+    .signup {
+        margin-bottom: 100px;
+    }
+
+    .half-text {
+        max-width: 50%;
+        padding-bottom: 100px;
+    }
+
+    .free {
+        padding-top: 100px;
+        margin: 0 50px;
+        border-radius: 10px;
+        /* padding-bottom: 50px; */
+    }
+
+
+.free .wrapper {
+    padding-bottom: 50px;
+}
+
+.mobile-mod {
+    width: fit-content;
+
+}
+
+.logo {
+    width: 50%;
+    justify-content: space-around;
+}
+
+.companies .wrapper {
+    display: flex;
+    margin: 0 50px;
+    justify-content: space-between;
+}
+
+.auction h1 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.block-system {
+    margin: 40px 50px;
+    justify-content: space-between;
+}
+
+.block {
+    width: 290px;
+    
+}
+
+.block-upper img {
+    width: 260px;
+}
+
+.line {
+    margin: 0 50px;
+}
+
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+}
 
     .mobile {
         display: none;
